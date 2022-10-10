@@ -1,0 +1,80 @@
+@media all and (max-width: 768px){
+	.item{
+		max-width: initial;
+		max-height: initial;
+		width: 90vw;
+		height: calc(90vw / 16 * 9);
+	}
+	.img_link{
+		margin: 5px 0;
+	}
+}
+@media all and (min-width: 1200px){
+	.img_link:hover{
+		opacity: 1;
+		transform: scale(1.1) rotate(10deg);
+		z-index: 10;
+		box-shadow: 0 0 200px 30px rgba(0, 0, 0, 0.4);
+    }
+}
+@font-face {
+font-family: "Montserrat";
+src: url("../fonts/Montserrat.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+head{
+	background-color: orangered;
+
+}
+.main{
+	background-color: #6C8CD5;
+	display: flex;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 0 10px 1px rgba(30, 30, 30, 0.6);
+	flex-wrap: wrap;
+
+}
+.item{
+	max-width: 490px;
+	max-height: 265px;
+	height: calc(95vw / 2);
+	width:  calc(90vw - 10px);
+	background-color: #876ED7;
+	background-position: center;
+	background-size: 100%;
+
+}
+
+.heading{
+	font-family: "Montserrat";
+	text-align: center;
+	font-size: 60px;
+	width: 100%;
+	font-family: 'Amatic SC', cursive;
+}
+.img_link{
+	display: block;
+	opacity: 0.9;
+	transition: opacity 0.4s ease, transform 0.4s ease-in, box-shadow 0.2s ease-out;		
+	margin: 5px;
+}
+html,body {
+	background-color: #33CCCC;
+	text-align:center;
+	font-size: 30px;
+	margin:0;
+    padding:0;
+    height:100%
+}
+#footer{
+	display: flex;
+	justify-content: space-around;
+}
